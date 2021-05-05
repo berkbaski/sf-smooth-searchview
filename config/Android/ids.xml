@@ -4,26 +4,19 @@
     <item name="___library___MaterialTextBox" type="id" />
     <item name="___library___PageTitleLayout" type="id" />
     <item name="___library___Simple_gridviewItem" type="id" />
-    <item name="___library___LviElement_LblKey" type="id" />
-    <item name="___library___Simple_gridviewItem_ImgPreview" type="id" />
+    <item name="___library___LviElement_FlElementWrapper" type="id" />
     <item name="___library___PageTitleLayout_Logo" type="id" />
-    <item name="___library___LviElement_LblValue" type="id" />
+    <item name="___library___Simple_gridviewItem_ImgPreview" type="id" />
     <item name="___library___Simple_gridviewItem_LblTitle" type="id" />
-    <item name="___library___LviElement_LblChevron" type="id" />
     <item name="___library___Simple_gridviewItem_LblSubtitle" type="id" />
-    <item name="___library___LviElement_FlLine" type="id" />
+    <item name="___library___LviElement_FlElementWrapper_LblValue" type="id" />
+    <item name="___library___LviElement_FlElementWrapper_LblKey" type="id" />
+    <item name="___library___LviElement_FlElementWrapper_FlLine" type="id" />
     <item name="_PgNavigator_FlNavigatorContainer" type="id" />
     <item name="_PgNavigator_FlNavigatorContainer_BtnStandardPage" type="id" />
     <item name="_PgNavigator_FlNavigatorContainer_BtnZebraPage" type="id" />
     <item name="_PgStandardList_LvElements" type="id" />
     <item name="_PgStandardList_LvElements_LviElement" type="id" />
-    <item name="_PgZebraList_ListView1" type="id" />
     <item name="_PgZebraList_LvElements" type="id" />
     <item name="_PgZebraList_LvElements_LviElement" type="id" />
-    <item name="___library___LviElement_FlexLayout1" type="id" />
-    <item name="___library___LviElement_FlElementWrapper" type="id" />
-    <item name="___library___LviElement_FlElementWrapper_Label1" type="id" />
-    <item name="___library___LviElement_FlElementWrapper_LblValue" type="id" />
-    <item name="___library___LviElement_FlElementWrapper_LblKey" type="id" />
-    <item name="___library___LviElement_FlElementWrapper_FlLine" type="id" />
 </resources>

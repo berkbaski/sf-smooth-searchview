@@ -30,7 +30,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".sf-headerBar #pgStandardList.sf-headerBar",
 			"id": "2fd3-1c64-9987-1c12",
 			"props": {
 				"children": [],

@@ -33,6 +33,13 @@ const router = Router.of({
                         getPageClass: () => require("pages/pgZebraList").default,
                         headerBarStyle: { visible: true }
                     })
+                }),
+                Route.of({
+                    path: "/pages/pgSearchView",
+                    build: buildExtender({
+                        getPageClass: () => require("pages/pgSearchView").default,
+                        headerBarStyle: { visible: true }
+                    })
                 })
             ]
         })
