@@ -14,19 +14,26 @@ const router = Router.of({
             path: "/pages",
             routes: [
                 Route.of({
-                    path: "/pages/page1",
-                    build: buildExtender({ 
-                        getPageClass: () => require("pages/page1").default, 
-                        headerBarStyle: { visible: true } 
+                    path: "/pages/pgNavigator",
+                    build: buildExtender({
+                        getPageClass: () => require("pages/pgNavigator").default,
+                        headerBarStyle: { visible: true }
                     })
                 }),
                 Route.of({
-                    path: "/pages/page2",
-                    build: buildExtender({ 
-                        getPageClass: () => require("pages/page2").default, 
-                        headerBarStyle: { visible: true } 
+                    path: "/pages/pgStandardList",
+                    build: buildExtender({
+                        getPageClass: () => require("pages/pgStandardList").default,
+                        headerBarStyle: { visible: true }
                     })
                 }),
+                Route.of({
+                    path: "/pages/pgZebraList",
+                    build: buildExtender({
+                        getPageClass: () => require("pages/pgZebraList").default,
+                        headerBarStyle: { visible: true }
+                    })
+                })
             ]
         })
     ]

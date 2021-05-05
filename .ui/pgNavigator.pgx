@@ -1,0 +1,102 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "f925-4098-5dcc-20b9",
+			"initialized": true,
+			"props": {
+				"children": [
+					"bcba-31d3-729b-2497",
+					"0044-73fb-9aca-12f7",
+					"cbab-fd00-e29b-0c2e"
+				],
+				"name": "pgNavigator",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "bcba-31d3-729b-2497",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "f925-4098-5dcc-20b9"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "0044-73fb-9aca-12f7",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "f925-4098-5dcc-20b9",
+				"title": "pgNavigator"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgNavigator"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "cbab-fd00-e29b-0c2e",
+			"props": {
+				"children": [
+					"0beb-33d4-92bb-f33b",
+					"e2b8-49c1-da5c-1ce7"
+				],
+				"name": "flNavigatorContainer",
+				"parent": "f925-4098-5dcc-20b9"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"testId": "VZ8wS84NH"
+			}
+		},
+		{
+			"className": ".sf-button #pgNavigator.sf-button",
+			"id": "0beb-33d4-92bb-f33b",
+			"props": {
+				"children": [],
+				"name": "btnStandardPage",
+				"parent": "cbab-fd00-e29b-0c2e",
+				"text": "button1",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "m5cEDi-l0",
+				"text": "button1",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button #pgNavigator.sf-button",
+			"id": "e2b8-49c1-da5c-1ce7",
+			"props": {
+				"children": [],
+				"name": "btnZebraPage",
+				"parent": "cbab-fd00-e29b-0c2e",
+				"text": "button2",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"testId": "eDg8QAKCn",
+				"text": "button2",
+				"usePageVariable": true
+			}
+		}
+	]
+}
