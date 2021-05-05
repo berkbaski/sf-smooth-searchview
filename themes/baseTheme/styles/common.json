@@ -1,2 +1,12 @@
 {
+	".sf": {
+		"&-listView": {
+			"&-fill": {
+				"testId": "wFHWCmhN4",
+				"flexProps": {
+					"flexGrow": 1
+				}
+			}
+		}
+	}
 }
