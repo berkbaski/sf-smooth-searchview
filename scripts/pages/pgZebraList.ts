@@ -1,13 +1,37 @@
 import PgZebraListDesign from 'generated/pages/pgZebraList';
+import LviElement from 'components/LviElement';
+
+import * as elementService from 'services/element'
+import { ElementType } from 'services/types/elements';
 
 export default class PgZebraList extends PgZebraListDesign {
-	constructor() {
-		super();
-		// Overrides super.onShow method
-		this.onShow = onShow.bind(this, this.onShow.bind(this));
-		// Overrides super.onLoad method
-		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-	}
+    elements: ElementType[] = [];
+    constructor() {
+        super();
+        // Overrides super.onShow method
+        this.onShow = onShow.bind(this, this.onShow.bind(this));
+        // Overrides super.onLoad method
+        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    }
+    setTitle() {
+        this.headerBar.title = 'Zebra ListView';
+    }
+    fetchData() {
+        this.elements = elementService.getAll();
+        this.refreshListView();
+    }
+    initListView() {
+        this.lvElements.rowHeight = LviElement.getHeight();
+        this.lvElements.onRowBind = (listViewItem: LviElement, index: number) => {
+            listViewItem.keyText = this.elements[index].key;
+            listViewItem.valueText = this.elements[index].value;
+        };
+        this.lvElements.refreshEnabled = false;
+    }
+    refreshListView() {
+        this.lvElements.itemCount = this.elements.length;
+        this.lvElements.refreshData();
+    }
 }
 
 /**
@@ -17,7 +41,7 @@ export default class PgZebraList extends PgZebraListDesign {
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow: () => void) {
-	superOnShow();
+    superOnShow();
 }
 
 /**
@@ -26,5 +50,8 @@ function onShow(superOnShow: () => void) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad: () => void) {
-	superOnLoad();
+    superOnLoad();
+    this.setTitle();
+    this.initListView();
+    this.fetchData();
 }
