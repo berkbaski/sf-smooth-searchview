@@ -1,36 +1,36 @@
 {
-	".sf": {
-		"&-listView": {
-			"&-fill": {
-				"testId": "wFHWCmhN4",
-				"flexProps": {
-					"flexGrow": 1
-				}
-			}
-		},
-		"&-flexLayout": {
-			"&-fill": {
-				"flexProps": {
-					"flexGrow": 1
-				}
-			},
-			"&-wrapper": {
-				"flexProps": {
-					"flexDirection": "ROW"
-				},
-				"height": 52,
-				"&-active": {
-					"backgroundColor": "rgba( 245, 245, 245, 1 )"
-				},
-				"&-inactive": {
-					"backgroundColor": "rgba( 255, 255, 255, 1 )"
-				}
-			}
-		},
-		"&-listViewItem": {
-			"&-simple": {
-				"height": 54
-			}
-		}
-	}
+    ".sf": {
+        "&-listView": {
+            "&-fill": {
+                "testId": "wFHWCmhN4",
+                "flexProps": {
+                    "flexGrow": 1
+                }
+            }
+        },
+        "&-flexLayout": {
+            "&-fill": {
+                "flexProps": {
+                    "flexGrow": 1
+                }
+            },
+            "&-wrapper": {
+                "flexProps": {
+                    "flexDirection": "ROW"
+                },
+                "height": 52,
+                "&-active": {
+                    "backgroundColor": "rgba( 245, 245, 245, 1 )"
+                },
+                "&-inactive": {
+                    "backgroundColor": "rgba( 255, 255, 255, 1 )"
+                }
+            }
+        },
+        "&-listViewItem": {
+            "&-simple": {
+                "height": 54
+            }
+        }
+    }
 }

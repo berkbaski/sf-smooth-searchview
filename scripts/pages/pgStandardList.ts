@@ -14,7 +14,7 @@ export default class PgStandardList extends PgStandardListDesign {
     scrollParams = {
         maxSearchHeight: 50,
         innerMaxSearchFlexHeight: 40,
-        innerMaxSearchFlexBorderRadius: 10,
+        innerMaxSearchFlexBorderRadius: 10
     };
 
     // Elements for SearchView

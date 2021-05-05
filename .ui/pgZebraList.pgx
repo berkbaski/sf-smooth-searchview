@@ -30,7 +30,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-headerBar",
+			"className": ".sf-headerBar #pgZebraList.sf-headerBar",
 			"id": "aff8-0444-5b49-d637",
 			"props": {
 				"children": [],

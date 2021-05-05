@@ -123,6 +123,9 @@ export default class PgZebraList extends PgZebraListDesign {
         this.lvElements.onRowBind = (listViewItem: LviElement, index: number) => {
             listViewItem.keyText = this.elements[index].key;
             listViewItem.valueText = this.elements[index].value;
+            listViewItem.flElementWrapper.dispatch(
+                pushClassNames(index % 2 === 1 ? '.sf-flexLayout-wrapper-active' : '.sf-flexLayout-wrapper-inactive')
+            );
         };
         this.lvElements.refreshEnabled = false;
     }
