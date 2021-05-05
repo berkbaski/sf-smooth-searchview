@@ -1,4 +1,8 @@
 import PgZebraListDesign from 'generated/pages/pgZebraList';
+
+import pushClassNames from "@smartface/contx/lib/styling/action/pushClassNames";
+import removeClassName from "@smartface/contx/lib/styling/action/removeClassName";
+
 import LviElement from 'components/LviElement';
 
 import * as elementService from 'services/element'
@@ -25,6 +29,10 @@ export default class PgZebraList extends PgZebraListDesign {
         this.lvElements.onRowBind = (listViewItem: LviElement, index: number) => {
             listViewItem.keyText = this.elements[index].key;
             listViewItem.valueText = this.elements[index].value;
+
+            listViewItem.flElementWrapper.dispatch(
+                pushClassNames(index % 2 === 1 ? '.sf-flexLayout-wrapper-active' : '.sf-flexLayout-wrapper-inactive')
+            );
         };
         this.lvElements.refreshEnabled = false;
     }

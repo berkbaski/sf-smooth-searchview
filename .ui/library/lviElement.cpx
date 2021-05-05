@@ -7,9 +7,7 @@
 			"initialized": true,
 			"props": {
 				"children": [
-					"ff05-f55e-a604-ed03",
-					"24ca-f21f-dfb6-5dc9",
-					"bd8f-5e00-4110-7fd7"
+					"615a-baa9-4281-7fc7"
 				],
 				"name": "lviElement",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -25,14 +23,36 @@
 			}
 		},
 		{
+			"className": ".sf-flexLayout .sf-flexLayout-fill .sf-flexLayout-wrapper",
+			"id": "615a-baa9-4281-7fc7",
+			"props": {
+				"children": [
+					"24ca-f21f-dfb6-5dc9",
+					"ff05-f55e-a604-ed03",
+					"bd8f-5e00-4110-7fd7"
+				],
+				"name": "flElementWrapper",
+				"parent": "1841-ff9a-b968-028d",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"testId": "29yw8eN1o",
+				"usePageVariable": true
+			}
+		},
+		{
 			"className": ".sf-label .sf-listViewItem-simple-title",
-			"id": "ff05-f55e-a604-ed03",
+			"id": "24ca-f21f-dfb6-5dc9",
 			"props": {
 				"autoHeight": 51.086956521739125,
 				"autoWidth": 134.91847826086956,
 				"children": [],
-				"name": "lblKey",
-				"parent": "1841-ff9a-b968-028d",
+				"name": "lblValue",
+				"parent": "615a-baa9-4281-7fc7",
 				"text": "ListView Cell Title",
 				"usePageVariable": true
 			},
@@ -50,13 +70,13 @@
 		},
 		{
 			"className": ".sf-label .sf-listViewItem-simple-title",
-			"id": "24ca-f21f-dfb6-5dc9",
+			"id": "ff05-f55e-a604-ed03",
 			"props": {
 				"autoHeight": 51.086956521739125,
 				"autoWidth": 134.91847826086956,
 				"children": [],
-				"name": "lblValue",
-				"parent": "1841-ff9a-b968-028d",
+				"name": "lblKey",
+				"parent": "615a-baa9-4281-7fc7",
 				"text": "ListView Cell Title",
 				"usePageVariable": true
 			},
@@ -78,7 +98,7 @@
 			"props": {
 				"children": [],
 				"name": "flLine",
-				"parent": "1841-ff9a-b968-028d"
+				"parent": "615a-baa9-4281-7fc7"
 			},
 			"source": {
 				"page": "__library__"

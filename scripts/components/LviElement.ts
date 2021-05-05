@@ -25,6 +25,6 @@ export default class LviElement extends LviElementDesign {
     }
 
     static getHeight(): number {
-        return 80;
+        return 54;
     }
 }

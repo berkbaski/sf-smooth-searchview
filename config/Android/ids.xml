@@ -17,4 +17,13 @@
     <item name="_PgNavigator_FlNavigatorContainer_BtnZebraPage" type="id" />
     <item name="_PgStandardList_LvElements" type="id" />
     <item name="_PgStandardList_LvElements_LviElement" type="id" />
+    <item name="_PgZebraList_ListView1" type="id" />
+    <item name="_PgZebraList_LvElements" type="id" />
+    <item name="_PgZebraList_LvElements_LviElement" type="id" />
+    <item name="___library___LviElement_FlexLayout1" type="id" />
+    <item name="___library___LviElement_FlElementWrapper" type="id" />
+    <item name="___library___LviElement_FlElementWrapper_Label1" type="id" />
+    <item name="___library___LviElement_FlElementWrapper_LblValue" type="id" />
+    <item name="___library___LviElement_FlElementWrapper_LblKey" type="id" />
+    <item name="___library___LviElement_FlElementWrapper_FlLine" type="id" />
 </resources>
