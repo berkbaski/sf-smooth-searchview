@@ -1,36 +1,57 @@
 {
-    ".sf": {
-        "&-listView": {
-            "&-fill": {
-                "testId": "wFHWCmhN4",
-                "flexProps": {
-                    "flexGrow": 1
-                }
-            }
-        },
-        "&-flexLayout": {
-            "&-fill": {
-                "flexProps": {
-                    "flexGrow": 1
-                }
-            },
-            "&-wrapper": {
-                "flexProps": {
-                    "flexDirection": "ROW"
-                },
-                "height": 52,
-                "&-active": {
-                    "backgroundColor": "rgba( 245, 245, 245, 1 )"
-                },
-                "&-inactive": {
-                    "backgroundColor": "rgba( 255, 255, 255, 1 )"
-                }
-            }
-        },
-        "&-listViewItem": {
-            "&-simple": {
-                "height": 54
-            }
-        }
-    }
+	".sf": {
+		"&-listView": {
+			"&-fill": {
+				"testId": "wFHWCmhN4",
+				"flexProps": {
+					"flexGrow": 1
+				}
+			}
+		},
+		"&-flexLayout": {
+			"&-fill": {
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"&-wrapper": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"flexGrow": 1
+				},
+				"height": 52,
+				"&-active": {
+					"backgroundColor": "rgba( 245, 245, 245, 1 )"
+				},
+				"&-inactive": {
+					"backgroundColor": "rgba( 255, 255, 255, 1 )"
+				},
+				"paddingLeft": 0,
+				"paddingRight": 0,
+				"marginLeft": 0
+			}
+		},
+		"&-listViewItem": {
+			"&-simple": {
+				"height": 54,
+				"&-title": {
+					"marginLeft": 0,
+					"flexProps": {
+						"flexGrow": 1
+					}
+				},
+				"&-line": {
+					"left": 0
+				}
+			},
+			"&-value": {
+				"textAlignment": "MIDRIGHT"
+			},
+			"&-key": {
+				"font": {
+					"style": "Semibold"
+				}
+			}
+		}
+	}
 }

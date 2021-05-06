@@ -27,8 +27,8 @@
 			"id": "615a-baa9-4281-7fc7",
 			"props": {
 				"children": [
-					"24ca-f21f-dfb6-5dc9",
 					"ff05-f55e-a604-ed03",
+					"24ca-f21f-dfb6-5dc9",
 					"bd8f-5e00-4110-7fd7"
 				],
 				"name": "flElementWrapper",
@@ -45,13 +45,13 @@
 			}
 		},
 		{
-			"className": ".sf-label .sf-listViewItem-simple-title",
-			"id": "24ca-f21f-dfb6-5dc9",
+			"className": ".sf-label .sf-listViewItem-simple-title .sf-listViewItem-key",
+			"id": "ff05-f55e-a604-ed03",
 			"props": {
 				"autoHeight": 51.086956521739125,
 				"autoWidth": 134.91847826086956,
 				"children": [],
-				"name": "lblValue",
+				"name": "lblKey",
 				"parent": "615a-baa9-4281-7fc7",
 				"text": "ListView Cell Title",
 				"usePageVariable": true
@@ -63,19 +63,18 @@
 			"userProps": {
 				"autoHeight": 51.086956521739125,
 				"autoWidth": 134.91847826086956,
-				"marginLeft": 16,
 				"text": "ListView Cell Title",
 				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-label .sf-listViewItem-simple-title",
-			"id": "ff05-f55e-a604-ed03",
+			"className": ".sf-label .sf-listViewItem-simple-title .sf-listViewItem-value",
+			"id": "24ca-f21f-dfb6-5dc9",
 			"props": {
 				"autoHeight": 51.086956521739125,
 				"autoWidth": 134.91847826086956,
 				"children": [],
-				"name": "lblKey",
+				"name": "lblValue",
 				"parent": "615a-baa9-4281-7fc7",
 				"text": "ListView Cell Title",
 				"usePageVariable": true

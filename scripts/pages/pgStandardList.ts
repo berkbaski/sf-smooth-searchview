@@ -146,7 +146,7 @@ function onShow(superOnShow: () => void) {
 function onLoad(superOnLoad: () => void) {
     superOnLoad();
     this.setTitle();
-    this.initSearchView();
     this.initListView();
+    this.initSearchView();
     this.fetchData();
 }
