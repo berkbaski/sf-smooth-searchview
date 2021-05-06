@@ -4,6 +4,8 @@ import LviElement from 'components/LviElement';
 import Color from 'sf-core/ui/color';
 import FlexLayout from 'sf-core/ui/flexlayout';
 import SearchView from 'sf-core/ui/searchview';
+import Application from 'sf-core/application';
+import System from 'sf-core/device/system';
 
 import * as elementService from 'services/element'
 import { ElementType } from 'services/types/elements';
@@ -61,7 +63,19 @@ export default class PgStandardList extends PgStandardListDesign {
         this.searchBar.top = -20;
         this.searchBar.hint = "Search";
 
-        this.searchBar.ios.searchViewStyle = SearchView.iOS.Style.MINIMAL;
+        if (System.OS === System.OSType.IOS) {
+            this.searchBar.ios.showsCancelButton = true;
+            this.searchBar.ios.cancelButtonText = 'Cancel';
+            this.searchBar.ios.cancelButtonColor = Color.WHITE;
+            this.searchBar.ios.cursorColor = Color.BLACK;
+            this.searchBar.ios.searchViewStyle = SearchView.iOS.Style.PROMINENT;
+            this.searchBar.ios.onCancelButtonClicked = () => {
+                this.searchBar.text = '';
+                this.searchBar.hideKeyboard();
+            }
+        }
+
+        this.searchBar.backgroundColor = Color.create('#00a1f1');
         this.searchBar.textFieldBackgroundColor = Color.create('#f5f5f5');
         this.innerSearchFlex.addChild(this.searchBar);
 
