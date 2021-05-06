@@ -43,13 +43,13 @@ export default class PgStandardList extends PgStandardListDesign {
         this.searchFlex.top = 0;
         this.searchFlex.left = 0;
         this.searchFlex.right = 0;
-        this.searchFlex.height = 0;
-        this.searchFlex.alpha = 0;
+        this.searchFlex.height = this.scrollParams.maxSearchHeight;
+        this.searchFlex.alpha = 1;
 
         this.innerSearchFlex = new FlexLayout();
         this.innerSearchFlex.backgroundColor = Color.TRANSPARENT;
-        this.innerSearchFlex.borderRadius = 15;
-        this.innerSearchFlex.height = 0;
+        this.innerSearchFlex.borderRadius = this.scrollParams.innerMaxSearchFlexBorderRadius;
+        this.innerSearchFlex.height = this.scrollParams.innerMaxSearchFlexHeight;
         this.innerSearchFlex.marginTop = 5;
         this.innerSearchFlex.marginLeft = 20;
         this.innerSearchFlex.marginRight = 20;
